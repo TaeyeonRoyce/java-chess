@@ -1,4 +1,4 @@
-package chess.domain.repository.mapper;
+package chess.repository.mapper;
 
 import chess.domain.piece.Bishop;
 import chess.domain.piece.Camp;

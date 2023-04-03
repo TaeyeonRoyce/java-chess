@@ -1,7 +1,7 @@
 package chess.domain.position;
 
-import chess.domain.repository.mapper.FileDtoMapper;
-import chess.domain.repository.mapper.RankDtoMapper;
+import chess.repository.mapper.FileDtoMapper;
+import chess.repository.mapper.RankDtoMapper;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

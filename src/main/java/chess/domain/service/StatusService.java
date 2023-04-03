@@ -2,8 +2,8 @@ package chess.domain.service;
 
 import chess.domain.game.result.GameResult;
 import chess.domain.game.state.ChessGame;
-import chess.domain.repository.BoardDao;
-import chess.domain.repository.PieceDao;
+import chess.repository.BoardDao;
+import chess.repository.PieceDao;
 
 public class StatusService {
 

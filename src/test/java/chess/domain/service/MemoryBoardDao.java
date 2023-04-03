@@ -1,7 +1,7 @@
 package chess.domain.service;
 
-import chess.domain.repository.BoardDao;
-import chess.domain.repository.entity.BoardEntity;
+import chess.repository.BoardDao;
+import chess.repository.entity.BoardEntity;
 import java.util.ArrayList;
 import java.util.List;
 

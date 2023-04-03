@@ -1,10 +1,10 @@
-package chess.domain.repository.entity;
+package chess.repository.entity;
 
 import chess.domain.piece.Camp;
 import chess.domain.piece.Piece;
 import chess.domain.position.Position;
-import chess.domain.repository.mapper.PieceDtoMapper;
-import chess.domain.repository.mapper.PositionValueConverter;
+import chess.repository.mapper.PieceDtoMapper;
+import chess.repository.mapper.PositionValueConverter;
 
 public class PieceEntity {
     private final String position;

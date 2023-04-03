@@ -3,7 +3,8 @@ package chess.domain.repository;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
-import chess.domain.repository.entity.PieceEntity;
+import chess.repository.PieceDao;
+import chess.repository.entity.PieceEntity;
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;

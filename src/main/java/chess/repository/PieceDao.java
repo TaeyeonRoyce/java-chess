@@ -1,6 +1,6 @@
-package chess.domain.repository;
+package chess.repository;
 
-import chess.domain.repository.entity.PieceEntity;
+import chess.repository.entity.PieceEntity;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

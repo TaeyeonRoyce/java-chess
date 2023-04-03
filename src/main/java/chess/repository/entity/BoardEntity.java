@@ -1,4 +1,4 @@
-package chess.domain.repository.entity;
+package chess.repository.entity;
 
 public class BoardEntity {
     private final String turn;

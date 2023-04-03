@@ -1,7 +1,7 @@
 package chess.domain.service;
 
-import chess.domain.repository.PieceDao;
-import chess.domain.repository.entity.PieceEntity;
+import chess.repository.PieceDao;
+import chess.repository.entity.PieceEntity;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

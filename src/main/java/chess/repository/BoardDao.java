@@ -1,6 +1,6 @@
-package chess.domain.repository;
+package chess.repository;
 
-import chess.domain.repository.entity.BoardEntity;
+import chess.repository.entity.BoardEntity;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;

@@ -2,9 +2,9 @@ package chess.domain.service;
 
 import chess.domain.game.state.ChessGame;
 import chess.domain.position.Position;
-import chess.domain.repository.BoardDao;
-import chess.domain.repository.PieceDao;
-import chess.domain.repository.mapper.PositionValueConverter;
+import chess.repository.BoardDao;
+import chess.repository.PieceDao;
+import chess.repository.mapper.PositionValueConverter;
 
 public class MoveService {
     private final BoardDao boardDao;

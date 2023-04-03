@@ -1,4 +1,4 @@
-package chess.domain.repository.mapper;
+package chess.repository.mapper;
 
 import chess.domain.position.File;
 import java.util.Arrays;
