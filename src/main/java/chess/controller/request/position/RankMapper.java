@@ -1,4 +1,4 @@
-package chess.controller.mapper.request;
+package chess.controller.request.position;
 
 import chess.domain.position.Rank;
 import java.util.Arrays;

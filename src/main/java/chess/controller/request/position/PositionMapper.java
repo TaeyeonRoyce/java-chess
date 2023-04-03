@@ -1,14 +1,11 @@
-package chess.controller.mapper.request;
+package chess.controller.request.position;
 
 import chess.domain.position.Position;
 
-public final class PositionMapper {
-
+public enum PositionMapper {
+;
     private static final int FILE_INDEX = 0;
     private static final int RANK_INDEX = 1;
-
-    private PositionMapper() {
-    }
 
     public static Position toPosition(String positionInput) {
         if (positionInput.length() != 2) {

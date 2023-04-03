@@ -36,7 +36,7 @@ public abstract class StartedGame implements ChessGame {
     }
 
     @Override
-    public Camp getCurrentCamp() {
+    public Camp getNextCamp() {
         return this.turnCamp;
     }
 }

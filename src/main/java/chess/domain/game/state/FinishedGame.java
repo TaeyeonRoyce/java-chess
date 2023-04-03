@@ -47,7 +47,7 @@ public abstract class FinishedGame implements ChessGame {
     }
 
     @Override
-    public Camp getCurrentCamp() {
+    public Camp getNextCamp() {
         throw new IllegalStateException(GAME_ALREADY_END);
     }
 }

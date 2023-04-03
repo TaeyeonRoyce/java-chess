@@ -22,5 +22,5 @@ public interface ChessGame {
 
     GameResult calculateResult();
 
-    Camp getCurrentCamp();
+    Camp getNextCamp();
 }

@@ -50,7 +50,7 @@ public class ReadyGame implements ChessGame {
     }
 
     @Override
-    public Camp getCurrentCamp() {
-        return INIT_CAMP;
+    public Camp getNextCamp() {
+        return INIT_CAMP.convert();
     }
 }

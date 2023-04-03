@@ -1,4 +1,4 @@
-package chess.domain;
+package chess.domain.service;
 
 import chess.domain.game.state.ChessGame;
 import chess.domain.game.state.RunGame;
@@ -15,21 +15,17 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-public class LoadChessGameService {
+public class LoadGameService {
     private final BoardDao boardDao;
     private final PieceDao pieceDao;
 
-    public LoadChessGameService(BoardDao boardDao, PieceDao pieceDao) {
+    public LoadGameService(BoardDao boardDao, PieceDao pieceDao) {
         this.boardDao = boardDao;
         this.pieceDao = pieceDao;
     }
 
-    public boolean isGameExist() {
-        return boardDao.existBoard();
-    }
-
     public ChessGame loadExistGame() {
-        if (!isGameExist()) {
+        if (isGameNotFound()) {
             throw new IllegalStateException("불러올 게임이 존재하지 않습니다.");
         }
 
@@ -40,6 +36,10 @@ public class LoadChessGameService {
         ChessBoard chessBoard = new ChessBoard(pieceByPosition);
 
         return new RunGame(chessBoard, Camp.valueOf(board.getTurn()));
+    }
+
+    private boolean isGameNotFound() {
+        return !boardDao.existBoard();
     }
 
     private Map<Position, Piece> convertToPieceByPosition(List<PieceEntity> allPieces) {
@@ -54,10 +54,5 @@ public class LoadChessGameService {
         }
 
         return pieceByPosition;
-    }
-
-    public void cleanUpGame() {
-        pieceDao.deleteAll();
-        boardDao.deleteAll();
     }
 }

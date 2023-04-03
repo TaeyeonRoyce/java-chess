@@ -1,4 +1,4 @@
-package chess.controller.mapper.request;
+package chess.controller.request;
 
 import chess.domain.game.ChessCommandType;
 import java.util.Arrays;
